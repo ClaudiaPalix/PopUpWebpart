@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://rpgnet.sharepoint.com/sites/OneRPG",
+      "customActions": {
+        "f9464dfe-cfed-4d9d-8955-87294d33cc09": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "popUp": {
+      "pageUrl": "https://rpgnet.sharepoint.com/sites/OneRPG",
+      "customActions": {
+        "f9464dfe-cfed-4d9d-8955-87294d33cc09": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

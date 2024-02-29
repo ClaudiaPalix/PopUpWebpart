@@ -1,0 +1,225 @@
+.modal {font-family: Arial, Helvetica, sans-serif;}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  max-width: 700px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.close {
+  color: #20417c;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 12px;
+  top: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding:30px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+
+/** slider styles **/
+.modal * {box-sizing: border-box}
+
+
+.popupSlides {display: none}
+
+.modal img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(32, 65, 124, 0.8)
+}
+
+.text {
+  bottom: 8px;
+  color: #161616;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.textDiv{
+  margin: auto;
+  max-width: 1000px;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  top: 25px;
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #000000;
+  border: 1px solid #20417c;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: transparent;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.popupSlides{
+  max-height: 400px;
+  overflow: hidden;
+}
+.popupSlides img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dotButton{
+  position: absolute;
+  text-align: center;
+  bottom: -25px;
+  width: 100%;
+}
+.bottomGradient{
+  background: linear-gradient(180deg,transparent 55%,#000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.bottomGradient:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media only screen and (max-width: 389px){
+  .text {font-size: 12px}
+}
+
+@media only screen and (max-width: 567px) {
+ .textDiv{
+  padding: 10px 0 15px;
+ }
+  .modal-body{
+  padding: 20px;
+ }
+ .close{
+  font-size: 20px;
+  right: 8px;
+ }
+ .dot{
+  height: 8px;
+  width: 8px;
+ }
+ .prev, .next{
+  font-size: 12px;
+  padding: 8px;
+ }
+}

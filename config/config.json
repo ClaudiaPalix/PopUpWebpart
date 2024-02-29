@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pop-up-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/popUp/PopUpApplicationCustomizer.js",
+          "manifest": "./src/extensions/popUp/PopUpApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PopUpApplicationCustomizerStrings": "lib/extensions/popUp/loc/{locale}.js"
+  }
+}
