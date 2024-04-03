@@ -395,9 +395,9 @@ export default class PopUpApplicationCustomizer
       }
     });
   
-    // setInterval(() => {
-    //   this.plusSlides(1);
-    // }, 4000);
+    setInterval(() => {
+      this.plusSlides(1);
+    }, 4000);
 
     // console.log("End of setupEventHandlers");
   }
